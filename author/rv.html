@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+        <meta charset="utf-8" />
+        <title>rv's blog - rv</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+
+        <!--[if IE]>
+            <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">rv's blog </a></h1>
+                <nav><ul>
+                    <li><a href="/category/python3dezi-dong-mai-mai.html">python3で自動売買</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+
+            <aside id="featured" class="body">
+                <article>
+                    <h1 class="entry-title"><a href="/first-post.html">python3で自動売買 その1</a></h1>
+<footer class="post-info">
+        <abbr class="published" title="2015-09-12T22:30:00+09:00">
+                Published: 土 12 9月 2015
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/rv.html">rv</a>
+        </address>
+<p>In <a href="/category/python3dezi-dong-mai-mai.html">python3で自動売買</a>.</p>
+<p>tags: <a href="/tag/python3.html">python3</a> <a href="/tag/zi-dong-mai-mai.html">自動売買</a> </p>
+</footer><!-- /.post-info --><h1>python3で自動売買プログラムの完成を目指す</h1>
+<p>今日からブログは<a href="http://docs.getpelican.com/en/3.6.3/">Pelican</a>を使います。</p>
+<p>mdファイルに慣れていないので、文章書くだけでも一苦労...</p>
+<p>このブログではタイトル通り、python3で自動売買プログラムの完成を目指します。</p>
+<p>自動売買を行うにあたり、必要な機能は以下の3つ:</p>
+<ol>
+<li>
+<p>証券会社のサイトなどから情報を取得・整理・保存する機能</p>
+</li>
+<li>
+<p>情報を統計的に解析し、自動売買を行うためのAIを作成する機能</p>
+</li>
+<li>
+<p>売買を行うAPIの機能</p>
+</li>
+</ol>
+<p>1~3の中で一番の問題は2であり、1と3はプログラムを書けばどうにでもなる。</p>
+<p>というか3はすでにscalaでプログラムが書いてある。</p>
+<p>問題は2であり、ここをなんとかしなければ。</p>
+<hr />
+<p>情報を整理すると...</p>
+<ol>
+<li>証券会社のサイトなどから情報を取得・整理・保存する機能について</li>
+</ol>
+<p>GMOクリック証券からリアルタイムの為替・CFD・株の情報を、Yahoo Financeから指標を取得し、2で解析しやすいようにデータの整形を行う。</p>
+<ol>
+<li>情報を統計的に解析し、自動売買を行うためのAIを作成する機能について</li>
+</ol>
+<p>いろいろな機械学習を試してきたので、それを導入してみたい。Deep LearingやSVMなどの分類問題を解くAIで行けるだろうか。</p>
+<ol>
+<li>売買を行うAPIの機能</li>
+</ol>
+<p>MT4などFXを専用プログラムから取引できるツールは存在するが、今回はGMOクリック証券とのhttps通信をハックして、自作APIを作成する。
+これにより、FXだけでなく株やCFD,バイナリーオプションの取引もできるようになる。</p>
+<p>以上、今日はここまで</p>                </article>
+            </aside><!-- /#featured -->
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>blogroll</h2>
+                        <ul>
+                            <li><a href="http://getpelican.com/">Pelican</a></li>
+                            <li><a href="http://python.org/">Python.org</a></li>
+                            <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
+                            <li><a href="#">You can modify those links in your config file</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+
+                            <li><a href="#">You can add links in your config file</a></li>
+                            <li><a href="#">Another social link</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>
